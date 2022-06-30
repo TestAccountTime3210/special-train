@@ -1,0 +1,85 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Arrays
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+               /* int[] numbers = new int[5];
+
+                numbers[0] = 0;
+                numbers[1] = 8;
+                numbers[2] = 15;
+                numbers[3] = 16;
+                numbers[4] = 23;
+
+                string[] names = new string[] { "Bob", "Nancy", "Drew" };
+                names[2] = "Shannon";
+
+                Console.WriteLine(Convert.ToString(numbers[1]) + names[2]);
+                Console.ReadLine();
+            
+                Console.WriteLine(numbers.Length);
+                Console.ReadLine();
+            */
+
+              int[] numbers = new int[] { 4, 8, 15, 16, 23, 42 };
+                  for (int i = 0; i < numbers.Length; i++)
+                      {
+                          Console.WriteLine(numbers[i]);
+                      }
+
+              Console.ReadLine();
+
+               string[] names = new string[] { "Bob", "Michael", "Jill" };
+
+               foreach (string name in names)
+               {
+                   Console.WriteLine(name);
+               }
+
+               Console.ReadLine();
+
+             string zig = "You can get what you want out of life if you " +
+                 "help enough other people get what they want.";
+
+             char[] charArray = zig.ToCharArray();
+             Array.Reverse(charArray);
+
+             foreach (char zigChar in charArray)
+             {
+                 Console.Write(zigChar);
+             }
+
+             Console.ReadLine();
+            
+
+             object[] array = { "Bob", 86, 34.6 };
+             Array.Reverse(array);
+
+             foreach (object item in array)
+             {
+                 Console.WriteLine(item);
+             }
+
+             Console.ReadLine();
+
+            /*int[] numbers = { 3, 1, 6, 4, 5, 2 };
+            Array.Sort(numbers);
+            Array.Reverse(numbers);
+
+            foreach (int sortedNumber in numbers)
+            {
+                Console.WriteLine(sortedNumber);
+            }
+
+            Console.ReadLine();*/
+
+        }
+    }
+}
